@@ -1,1 +1,46 @@
-<img src="https://res.heraldm.com/phpwas/restmb_idxmake_amp.php?idx=681&simg=%2Fcontent%2Fimage%2F2017%2F11%2F13%2F20171113000966_0.jpg" alt="Pitchapa Arun">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nichapatr Uthaisangsuk (62011170)</title>
+
+</head>
+
+<body>
+<h1> Quiz </h1>
+<hr/>
+What is the answer of <span id="x1"></span> + <span id="x2" ></span> ?
+span for inline, strong for bold inline
+<br/>
+<input type="text" id="txtAnswer" />
+
+<br/>
+<button onclick="btn_click()">Click here</button>
+
+<script>
+        function btn_click(){
+            var t1 = document.getElementById("txtAnswer").value;
+            if (t1 == x1val+x2val){
+            document.getElementById("h1_001").innerText = "Excellent! ";
+            document.getElementById("h1_001").setAttribute("style", "color:green");
+            }
+            else{
+            document.getElementById("h1_001").innerText = "Fail! ";
+            document.getElementById("h1_001").setAttribute("style", "color:red");
+            }
+        }
+
+        x1val = Math.round(Math.random() * 100);
+        document.getElementById("x1").innerText = x1val
+
+        x2val = Math.round(Math.random() * 100);
+        document.getElementById("x2").innerText = x2val
+
+
+
+
+    </script>
+
+<h1 id="h1_001">  </h1>
+</body>
+</html>
